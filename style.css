@@ -474,6 +474,7 @@ font-size: 3em;
 .volunteer-table-wrapper {
   max-height: 300px;
   overflow-y: auto;
+  overflow-x: auto;
   border: 1px solid #8B0000; /* dark red border */
   margin: 20px 0;
   background-color: #121212; /* deep black background */
@@ -674,7 +675,7 @@ footer {
     .others button.bar-btn {
         display: inline-block;
         position:absolute;
-        right:25px;
+        right:20px;
     }
     
   .hide-bar-btn {
