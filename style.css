@@ -662,7 +662,10 @@ footer {
     .title h1 {
         font-size: 2.3em;
     }
-
+    .about {
+        align-items: center;
+        margin:auto;
+    }
     .about-details {
         flex-direction: column;
         height: auto;
@@ -673,7 +676,7 @@ footer {
     }
 
     .about-image {
-        width: 100%;
+        width: 90%;
     }
 
     .about-text h2 {
@@ -761,7 +764,6 @@ footer {
     width: 0;
     padding-top: 40px;
     transition: all 0.5s ease; 
-    z-index: 10000;
 }
 
 .aside-navigation ul {
