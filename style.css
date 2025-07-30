@@ -174,6 +174,7 @@ font-size: 3em;
 .about-image {
     width: 50%;
     height: 100%;
+    overflow-y: hidden;
 }
 
 .about-image img {
@@ -255,11 +256,11 @@ font-size: 3em;
 }
 
 .officers-item img {
-    width: 70px;
-    height: 70px;
+    width: 10em;
+    height: 15em;
     object-fit: cover;
     object-position: center;
-    border-radius: 50%;
+
 }
 
 .officers-item h2 {
@@ -267,6 +268,12 @@ font-size: 3em;
     text-transform: capitalize;
     color: #EDEDED;
     font-weight: 500;
+}
+.officers-item h3 {
+    font-size: 1 em;
+    text-transform: capitalize;
+    color:antiquewhite;
+    font-weight:400;
 }
 
 .officers-item p {
@@ -307,91 +314,6 @@ font-size: 3em;
     color: #ff6347;
 }
 
-/* officers End */
-
-/* Product */
-.puzzles {
-    padding: 0 5%;
-    width: 100%;
-    padding-top: 80px;
-}
-
-.puzzles-items {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 2em;
-    flex-wrap: wrap;
-    margin-top: 50px;
-}
-
-.puzzles-item {
-    width: 30%;
-    border-radius: 5px;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    padding-bottom: 3em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    gap: 10px;
-    text-align: center;
-    transition: all 0.5s ease;
-}
-
-.puzzles-item img {
-    width: 100%;
-    height: 400px;
-    object-fit: cover;
-    object-position: center;
-    transition: all 0.5s ease;  
-}
-
-.puzzles-item:hover img {
-    filter: grayscale(100%);
-}
-
-.puzzles-item h2 {
-    font-size: 1.5em;
-    text-transform: capitalize;
-    color: #EDEDED;
-    font-weight: 500;
-}
-
-.puzzles-rating {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    font-size: 1.3em;
-    color: #ff6347;
-}
-
-.puzzles-cta {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.puzzles-cta button {
-    border: none;
-    background: transparent;
-    background: #ff6347;
-    font-size: 20px;
-    cursor: pointer;
-    color: #EDEDED;
-    display: flex;
-    align-items: center;
-    padding:5px 8px;
-    border-radius: 3px;
-    transition: all 0.5s ease;
-}
-
-.puzzles-cta button:hover {
-    background: #EDEDED;
-    color: #ff6347;
-}
-
-/* Product End */
 
 /* Review */
 .review {
@@ -766,15 +688,6 @@ footer {
     }
 
     .officers-item {
-        width: 100%;
-    }
-
-    .puzzles-items {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .puzzles-item {
         width: 100%;
     }
 
