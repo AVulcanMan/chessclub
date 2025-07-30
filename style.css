@@ -94,12 +94,13 @@ header {
 }
 
 .hero h1 {
-    font-size: 4em;
+    font-size: 3.5em;
     text-transform: uppercase;
     color: #EDEDED;
     font-weight: 500;
     margin-bottom: 20px;
     max-width: 600px;
+    overflow:hidden
 }
 
 .hero p {
@@ -132,6 +133,7 @@ header {
     width: 100%;
     animation: bounce 2s infinite alternate;
     max-height:400px;
+    overflow:hidden
 }
 
 @keyframes bounce {
