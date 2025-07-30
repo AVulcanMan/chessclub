@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WHS Chess Club</title>
     <link rel="icon" type="image/x-icon" href="./img/logo.png">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
 <body>
  
@@ -30,7 +32,9 @@
             </ul>
         </div>
         <div class="others">
-             <button class="bar-btn"><ion-icon name="officers-outline"></ion-icon></button>
+            <button class="bar-btn">
+                <ion-icon name="menu-outline"></ion-icon>
+             </button>
         </div>
     </header>
 
@@ -256,12 +260,13 @@
             <iframe width="50%" height="600" frameborder="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6326.190487054688!2d-121.99740252323912!3d37.552819772042206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fbf7dda971cdf%3A0x68a7cfd17e26f7b0!2sWashington%20High%20School!5e0!3m2!1sen!2sus!4v1753230904046!5m2!1sen!2sus"></iframe>
             <div class="contact-form">
                 <h2>Get in Touch</h2>
-                <form>
-                    <input type="text" placeholder="Your Name" required>
-                    <input type="email" placeholder="Your Email" required>
-                    <textarea rows="5" placeholder="Your Message" required></textarea>
-                    <button type="submit">Send Message</button>
-                </form>
+        <form action="https://formspree.io/f/xeozzjqv" method="POST">
+           <input type="text" name="name" placeholder="Your Name" required>
+           <input type="email" name="email" placeholder="Your Email" required>
+           <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+         <button type="submit">Send Message</button>
+        </form>
+
             </div>
         </div>
     </div>

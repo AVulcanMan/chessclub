@@ -6,6 +6,7 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
     scroll-padding-top: 100px;
+    overflow-x: hidden;
 }
 
 body {
@@ -127,9 +128,10 @@ header {
 }
 
 .hero-image img {
-    max-width: 700px;
+    max-width: 500px;
     width: 100%;
     animation: bounce 2s infinite alternate;
+    max-height:400px;
 }
 
 @keyframes bounce {
@@ -144,6 +146,7 @@ header {
     padding: 0 5%;
     width: 100%;
     padding-top: 80px;
+    margin:2rem;
 }
 
 /* Global Style */
@@ -865,6 +868,11 @@ footer {
 
 .aside-navigation.active {
     width: 100%;
+}
+.others button.bar-btn ion-icon { 
+    color:white;     
+    font-size: 28px; 
+    font-weight:bold;    
 }
 /* Aside Navigation End */
 
