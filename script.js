@@ -1,18 +1,22 @@
 const barBtn = document.querySelector(".bar-btn");
 const asideNavigation = document.querySelector(".aside-navigation");
+const closeAsideBtn = document.getElementById("closeAside");
 
-const toggleAsideNavigation = () => {
-  asideNavigation.classList.toggle("active");
-}
+// When barBtn is clicked
+barBtn.addEventListener("click", () => {
+  asideNavigation.classList.add("active");
+  barBtn.classList.add("hide-bar-btn"); // hide it
+});
 
-barBtn.addEventListener("click", toggleAsideNavigation);
-
-const asideNavigationLinks = document.querySelectorAll(".aside-navigation a");
-asideNavigationLinks.forEach(link => {
+// When a link is clicked
+document.querySelectorAll(".aside-navigation a").forEach(link => {
   link.addEventListener("click", () => {
     asideNavigation.classList.remove("active");
+    barBtn.classList.remove("hide-bar-btn");
   });
 });
+
+// Clicking outside closes the aside
 document.addEventListener("click", (e) => {
   if (
     asideNavigation.classList.contains("active") &&
@@ -20,7 +24,12 @@ document.addEventListener("click", (e) => {
     !barBtn.contains(e.target)
   ) {
     asideNavigation.classList.remove("active");
+    barBtn.classList.remove("hide-bar-btn");
   }
 });
 
-
+// When X button is clicked
+closeAsideBtn.addEventListener("click", () => {
+  asideNavigation.classList.remove("active");
+  barBtn.classList.remove("hide-bar-btn");
+});

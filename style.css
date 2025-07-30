@@ -81,8 +81,7 @@ header {
 .others button.bar-btn {
     display: none;
     position:fixed;
-    padding:3px;
-    z-index:30;
+    z-index:20;
 }
 
 /* Header End */
@@ -676,8 +675,12 @@ footer {
     .others button.bar-btn {
         display: inline-block;
         background-color: #121212;
+        
     }
-
+    
+  .hide-bar-btn {
+    display: none !important;
+  }
     .links ul li {
         display: none;
     }
@@ -860,7 +863,6 @@ footer {
 }
 .others button.bar-btn ion-icon { 
     color:white;     
-    background:#121212;
     font-size: 28px; 
     font-weight:bold;   
 }
