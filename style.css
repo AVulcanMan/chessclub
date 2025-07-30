@@ -80,8 +80,8 @@ header {
 
 .others button.bar-btn {
     display: none;
-    position: relative; 
-    z-index: 10001;
+    position: fixed; 
+    z-index: 9999;
 }
 
 /* Header End */
