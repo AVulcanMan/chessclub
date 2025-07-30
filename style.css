@@ -80,7 +80,6 @@ header {
 
 .others button.bar-btn {
     display: none;
-    position:fixed;
     z-index:20;
 }
 
@@ -674,8 +673,8 @@ footer {
 @media (max-width: 1000px) {
     .others button.bar-btn {
         display: inline-block;
-        background-color: #121212;
-        
+        position:absolute;
+        right:10px;
     }
     
   .hide-bar-btn {
