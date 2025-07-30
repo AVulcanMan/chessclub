@@ -13,3 +13,14 @@ asideNavigationLinks.forEach(link => {
     asideNavigation.classList.remove("active");
   });
 });
+document.addEventListener("click", (e) => {
+  if (
+    asideNavigation.classList.contains("active") &&
+    !asideNavigation.contains(e.target) &&
+    !barBtn.contains(e.target)
+  ) {
+    asideNavigation.classList.remove("active");
+  }
+});
+
+

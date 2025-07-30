@@ -789,6 +789,9 @@ footer {
     font-size: 28px; 
     font-weight:bold;    
 }
+.hidden {
+    display:none;
+}
 /* Aside Navigation End */
 
 a {
